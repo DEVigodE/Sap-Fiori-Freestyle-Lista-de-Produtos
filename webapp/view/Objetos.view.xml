@@ -1,0 +1,31 @@
+<mvc:View 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m" 
+    controllerName="br.com.nel.freestyle.ibm.report.products.controller.Objetos" 
+    displayBlock="true">
+<Shell id="shell">
+    <App id="app2">
+            <Page id="page" title="{i18n>title} TESTE">
+        <content>
+            <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0">
+                <headerToolbar>
+                    <Toolbar id="toolbar1">
+                        <Title id="title1" text="Header"/>
+                        <ToolbarSpacer id="spacer1"/>
+                        <Button id="button1" icon="sap-icon://settings"/>
+                        </Toolbar>
+                </headerToolbar>
+                <content>
+                    <List noDataText="Drop list items here" id="list0">
+                        <items>
+                            <StandardListItem type="Navigation" title="List Item 1" description="Description text" icon="sap-icon://picture" id="item0"/>
+                            <StandardListItem type="Navigation" title="List Item 2" description="Description text" icon="sap-icon://picture" id="item1"/>
+                        </items>
+                    </List>
+                </content>
+                </Panel>
+        </content>
+    </Page>
+    </App>
+</Shell>
+</mvc:View>
