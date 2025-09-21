@@ -1,31 +1,83 @@
-<mvc:View 
-    xmlns:mvc="sap.ui.core.mvc" 
-    xmlns="sap.m" 
-    controllerName="br.com.nel.freestyle.ibm.report.products.controller.Objetos" 
-    displayBlock="true">
-<Shell id="shell">
-    <App id="app2">
-            <Page id="page" title="{i18n>title} TESTE">
-        <content>
-            <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0">
-                <headerToolbar>
-                    <Toolbar id="toolbar1">
-                        <Title id="title1" text="Header"/>
-                        <ToolbarSpacer id="spacer1"/>
-                        <Button id="button1" icon="sap-icon://settings"/>
-                        </Toolbar>
-                </headerToolbar>
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="br.com.nel.freestyle.ibm.report.products.controller.Objetos"
+    displayBlock="true"
+>
+    <Shell id="shell">
+        <App id="app2">
+            <Page
+                id="page1"
+                title="{i18n>title}"
+            >
                 <content>
-                    <List noDataText="Drop list items here" id="list0">
-                        <items>
-                            <StandardListItem type="Navigation" title="List Item 1" description="Description text" icon="sap-icon://picture" id="item0"/>
-                            <StandardListItem type="Navigation" title="List Item 2" description="Description text" icon="sap-icon://picture" id="item1"/>
-                        </items>
-                    </List>
+                    <Panel
+                        xmlns="sap.m"
+                        width="auto"
+                        expandable="true"
+                        expanded="true"
+                        id="panel0"
+                    >
+                        <headerToolbar>
+                            <Toolbar id="toolbar1">
+                                <Title
+                                    id="title1"
+                                    text="Header"
+                                />
+                                <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+                                <Button
+                                    id="_IDGenButton"
+                                    icon="sap-icon://settings"
+                                />
+                            </Toolbar>
+                        </headerToolbar>
+                        <content>
+                            <List
+                                noDataText="Drop list items here"
+                                id="list0"
+                            >
+                                <items>
+                                    <StandardListItem
+                                        type="Navigation"
+                                        title="List Item 1"
+                                        description="Description text"
+                                        icon="sap-icon://picture"
+                                        id="item0"
+                                    />
+                                    <StandardListItem
+                                        type="Navigation"
+                                        title="List Item 2"
+                                        description="Description text"
+                                        icon="sap-icon://picture"
+                                        id="item1"
+                                    />
+                                </items>
+                            </List>
+                        </content>
+                        <infoToolbar>
+                            <Toolbar
+                                width="100%"
+                                id="toolbar1_1758311731386"
+                            >
+                                <content>
+                                    <Text
+                                        xmlns="sap.m"
+                                        text="Informação Adicional List"
+                                        id="text0"
+                                    />
+                                </content>
+                            </Toolbar>
+                        </infoToolbar>
+                    </Panel>
+                    <Button
+                        xmlns="sap.m"
+                        id="button2"
+                        text="Ler Texto Header"
+                        press="onClickSetText"
+                        icon="sap-icon://activate"
+                    />
                 </content>
-                </Panel>
-        </content>
-    </Page>
-    </App>
-</Shell>
+            </Page>
+        </App>
+    </Shell>
 </mvc:View>
